@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_id_rank"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:ignore="NamespaceTypo"
+
+
+    cardview:cardCornerRadius="4dp">
+
+    <android.support.constraint.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/book_img_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cup"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            cardview:layout_constraintEnd_toStartOf="@+id/guideline2"
+            cardview:layout_constraintStart_toStartOf="@+id/guideline"
+            cardview:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/book_img_id_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hands"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/book_img_id"
+            cardview:layout_constraintEnd_toStartOf="@+id/guideline2"
+            cardview:layout_constraintStart_toStartOf="@+id/guideline"
+            cardview:layout_constraintTop_toBottomOf="@+id/book_img_id" />
+
+        <ImageView
+            android:id="@+id/book_img_id_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/badge"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/book_img_id_2"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toStartOf="@+id/guideline2"
+            cardview:layout_constraintStart_toStartOf="@+id/guideline"
+            cardview:layout_constraintTop_toBottomOf="@+id/book_img_id_2" />
+
+        <TextView
+            android:id="@+id/league_queue"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="13dp"
+            android:gravity="top"
+            android:text="Queue"
+            android:textColor="#2d2d2d"
+            android:textSize="13sp"
+            app:layout_constraintLeft_toRightOf="@id/guideline2"
+            app:layout_constraintTop_toTopOf="parent"
+            cardview:layout_constraintStart_toStartOf="@+id/guideline2"
+            cardview:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/league_name"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:text="League name"
+            android:textColor="#2d2d2d"
+            android:textSize="13sp"
+            card_view:layout_constraintStart_toStartOf="@+id/guideline2"
+            card_view:layout_constraintTop_toBottomOf="@+id/league_queue" />
+
+        <TextView
+            android:id="@+id/league_rank"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:text="Rank"
+            android:textColor="#2d2d2d"
+            android:textSize="13sp"
+            card_view:layout_constraintStart_toStartOf="@+id/guideline2"
+            card_view:layout_constraintTop_toBottomOf="@+id/league_name" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            cardview:layout_constraintGuide_begin="1dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            cardview:layout_constraintGuide_begin="95dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/wins_losses"
+            android:text="wins/losses"
+            card_view:layout_constraintStart_toEndOf="@id/league_queue"
+            card_view:layout_constraintTop_toTopOf="@id/league_queue"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

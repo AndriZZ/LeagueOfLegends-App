@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "23505118480",
+    "firebase_url": "https://retrofit101-d7a33.firebaseio.com",
+    "project_id": "retrofit101-d7a33",
+    "storage_bucket": "retrofit101-d7a33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23505118480:android:272538f5b0c0c50d",
+        "android_client_info": {
+          "package_name": "com.mentormate.andriivanov.retrofit101"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23505118480-jkcpuf7adeke4nh2cv3vdtor59hi2aji.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mentormate.andriivanov.retrofit101",
+            "certificate_hash": "9678d7f68a4ae6dd8cc64979ab6bc548c7265373"
+          }
+        },
+        {
+          "client_id": "23505118480-77p1gd4661nd8qii8eqij8mr5edphsoa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx-AkSB9gtB9cD_tFkNebL3mLykPHYbQ0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23505118480-77p1gd4661nd8qii8eqij8mr5edphsoa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
